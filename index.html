@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .popUp {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            max-width: 785px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            -webkit-box-shadow: 0px 0px 10px 0px #ddd;
+            box-shadow: 0px 0px 10px 0px #ddd;
+        }
+
+        .popUp-content {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .col-100 {
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .inner {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .inner h1 {
+            font-size: 26px;
+            line-height: 1em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #00395C;
+        }
+
+        .inner p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        .inner span {
+            font-size: 12px;
+            display: block;
+        }
+
+        .button-wrapper {
+            margin: 20px 0 5px;
+            text-align: center;
+        }
+
+        .button-wrapper a {
+            display: inline-block;
+            text-decoration: none;
+            background: #00395c;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .inner hr {
+            margin: 15px 0;
+            display: block;
+            height: 1px;
+            border: 0;
+            background: #00395c;
+        }
+        @media screen and (max-width:820px) {
+            .popUp {
+                width: 95%;
+            }
+        }
+
+        @media screen and (max-width:590px) {
+            .inner h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .inner p {
+                font-size: 15px;
+            }
+
+            .inner span {
+                font-size: 10px;
+            }
+
+            .button-wrapper a {
+                padding: 6px 16px;
+                border-radius: 2px;
+                font-size: 14px;
+            }
+
+            .inner hr {
+                margin: 10px 0;
+            }
+        }
+        @media screen and (max-width:420px) {
+            .inner h1 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            .inner p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="popUp">
+        <div class="popUp-content">
+            <div class="col-100">
+                <div class="inner">
+                    <div>
+                        <h1>Upgrade to Gold Today and Receive Free Enrollment Fee</h1>
+                        <p>For a limited time, Guest Members receive a free $2990.00 Gold upgrade and pay just $29.90 monthly. New Gold Members also receive $25.00 each month in bonus rewards.</p>
+                        <hr>
+                        <span>This special promotion entitles new Gold members to $25.00 in rewards deposited monthly in their rewards account. *Member Must be active to qualify. Gold enrollment Fee valued at $2990.00.</span>
+                        <div class="button-wrapper">
+                            <a href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
